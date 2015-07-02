@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='mdat',
-    version='0.3.0',
+    version='0.3.1.2',
     packages=['mdat'],
     url='https://github.com/ctsit/mdat',
     license='Apache 2.0',
@@ -14,6 +14,7 @@ setup(
     long_description=open('README.md').read(),
     install_requires=[
         "jsonschema == 2.5.1",
+        "functools32 >= 3.2.3",
     ],
     entry_points={
         'console_scripts': [
@@ -21,7 +22,6 @@ setup(
         ],
     },
     tests_require=[
-        "jsonschema == 2.5.1",
     ],
     test_suite='tests',
 )
